@@ -8,9 +8,8 @@ const person2 = person1;
 
 person2.firstName = 'Simon';
 
-//Perchè l'oggetto person1 contiene "firstName" 
-//che viene riassegnato in person2 ed essendo l'ultima assegnazione 
-//è quella letta da js e automaticamente restituita
+//"perchè entrambi gli oggetti puntano alla stessa locazione di memoria"
+
 
 console.log(person1);
 console.log(person2);

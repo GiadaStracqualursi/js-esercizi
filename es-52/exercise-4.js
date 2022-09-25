@@ -5,6 +5,12 @@ const person = {
   age: 25,
 };
 
-const json = JSON.stringify(person,['id', 'age']);
+for (key in person) {
+  if (typeof person[key] === 'string') {
+    person[key] = undefined
+  }
+}
 
-console.log(json); // Should return: { id: 1, age: 25 }
+const json = JSON.stringify(person);
+
+console.log(json);
